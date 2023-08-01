@@ -34,7 +34,7 @@ const Listing = () => {
 
                 // Remplacez l'URL par l'adresse de votre API
                 setData(response.data);
-                console.log(response.data['content']);
+                //console.log(response.data['content']);
 
                 //setLoading(false);
             } catch (error) {
@@ -151,7 +151,7 @@ const Listing = () => {
        const response = axios.post('https://preproduction-gateway.bizao.com/debitCard/v2', postData, { headers });
             //.then((response) => {
                 // Traiter la réponse du serveur si nécessaire
-                console.log("HEADDD"+response.headers);
+                console.log("HEADDD"+response);
                 console.log("COOOORPS"+response.data);
                 //return response.data.return_url;
            /// })
